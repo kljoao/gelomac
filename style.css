@@ -1,0 +1,27 @@
+/* FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+/* FONTS IMPORT */
+
+/* CSS IMPORT */
+@import url(/css/fonts.css);
+@import url(/css/header.css);
+@import url(/css/main.css);
+/* CSS IMPORT */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(/img/back.png) no-repeat;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
