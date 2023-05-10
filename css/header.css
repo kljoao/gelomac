@@ -15,6 +15,7 @@
     background: none;
     border: 0px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .nav{
@@ -24,10 +25,8 @@
 }
 
 .nav-button{
-    cursor: pointer;
     padding: 10px;
     border: 0px;
-    background: none;
 }
 
 .nav-button:hover{
@@ -37,8 +36,25 @@
 @media(max-width: 768px){
     .nav{
         display: none;
+        position: absolute;
+        top: 96px;
+        right: 0px;
+        background-color: #ffffff;
+        width: 95%;
+        height: calc(100vh - 70px);
+        z-index: 1000;
+    }
+    .nav-button:hover{
+        border: none;
+    }
+    li{
+        border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+        margin-top: 15px;
     }
     .menu{
+        display: block;
+    }
+    #nav.ativo .nav{
         display: block;
     }
 }
