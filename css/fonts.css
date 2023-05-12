@@ -4,6 +4,26 @@
     color: #000000;
 }
 
+.black-40-normal{
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #000000;
+    transition: .3s;
+}
+
+.black-25-normal{
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+}
+
+.red-60-normal{
+    font-size: 60px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #EB3237;
+    transition: .3s;
+}
+
 .white-18-normal{
     font-size: 18px;
     font-family: 'Nunito', sans-serif;

@@ -12,10 +12,6 @@ btnMenu.addEventListener('click', toggleMenu);
 
 // SCRIPT DROPMENU
 
-
-
-
-
 // SCRIPT MÁQUINA DE ESCREVER
 
 const titulo = document.getElementById('titulo')
@@ -31,3 +27,7 @@ function typeWriter(e){
 typeWriter(titulo);
 
 // SCRIPT MÁQUINA DE ESCREVER
+
+window.sr = new ScrollReveal();
+sr.reveal('.section-story-img', { origin: 'top' , delay: 600 });
+sr.reveal('.story-text', { origin: 'bottom' , delay: 600 });
