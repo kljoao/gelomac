@@ -8,6 +8,7 @@
 @import url(css/header.css);
 @import url(css/main.css);
 @import url(css/footer.css);
+@import url(css/historia.css);
 /* CSS IMPORT */
 
 *{
@@ -18,6 +19,8 @@
 body{
     background: url(img/back.png) no-repeat;
     max-width: 100%;
+    background-color: rgb(233, 233, 233);
+    -webkit-font-smoothing: antialiased;
 }
 
 a{

@@ -31,3 +31,24 @@ typeWriter(titulo);
 window.sr = new ScrollReveal();
 sr.reveal('.section-story-img', { origin: 'top' , delay: 600 });
 sr.reveal('.story-text', { origin: 'bottom' , delay: 600 });
+
+
+
+
+const linkInterno = document.querySelectorAll('a[href^="#"')
+
+function scrollSuave(event){
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const section = document.querySelector(href)
+    const topo = section.offsetTop;
+
+    window.scrollTo({
+        top: topo,
+        behavior: 'smooth',
+    })
+}
+
+linkInterno.forEach((i) => {
+    i.addEventListener('click', scrollSuave)
+})

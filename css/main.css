@@ -55,49 +55,6 @@
     animation: piscar .8s infinite;;
 }
 
-.detalhe{
-    position: absolute;
-    margin-left: 1050px;
-    margin-top: -28px;
-    height: 50px;
-    border: 3px solid #EB3237;
-    border-radius: 1000px;
-}
-
-.story-container{
-    background-color: #d9d9d9;
-}
-
-.section-story{
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-    padding: 50px;
-}
-
-.section-story img{
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px 5px rgba(0, 0, 0, 0.479);
-}
-
-.section-story h1{
-    text-align: center;
-}
-
-.story-text{
-    text-align: center;
-}
-
-.title-story{
-    line-height: 40px;
-}
-
-.story-p{
-    text-align: left;
-    margin-top: 75px;
-    max-width: 57ch;
-}
-
 @keyframes piscar{
     0%{
         opacity: 1;
@@ -110,101 +67,20 @@
     }
 }
 
-@media(max-width: 2560px){
-    .detalhe{
-        margin-left: 1310px;
-    }
-}
-
-@media(max-width: 2300px){
-    .detalhe{
-        margin-left: 1030px;
-    }
-}
-
-@media(max-width: 1600px){
-    .detalhe{
-        margin-left: 750px;
-    }
-}
-
-@media(max-width: 1440px){
-    .detalhe{
-        margin-left: 730px;
-    }
-}
-
 @media(max-width: 1151px){
     .main-img{
         display: none;
     }
 }
 
-@media(max-width: 1024px){
-    .section-story img{
-        height: 400px;
-        width: 400px;
-    }
-    .story-p{
-        text-align: center;
-        font-size: 18px;
-    }
-    .section-story{
-        gap: 50px;
-    }
-    .detalhe{
-        margin-left: 530px;
-    }
-}
-
 @media(max-width: 768px){
-    .section-story{
-        display: block;
-        gap: 0px;
-        
-    }
-    .section-story img{
-        margin-left: 140px;
-    }
     .title-story{
         margin-top: 50px;
-    }
-    .story-p{
-        margin-top: 15px;
-        margin-left: 30px;
-        font-size: 18px;
-    }
-    .detalhe{
-        margin-left: 385px;
-    }
-}
-
-@media(max-width: 625px){
-    .section-story img{
-        height: 300px;
-        width: 300px;
-        margin-left: 120px;
-    }
-    .detalhe{
-        margin-left: 320px;
-    }
-    .story-p{
-        margin-left: 10px;
     }
 }
 
 @media(max-width: 425px){
-    .section-story{
-        padding: 0px;
-        gap: 0px;
-    }
     .title-story{
         padding-top: 40px;
-    }
-    .section-story img{
-        display: none;
-    }
-    .detalhe{
-        margin-left: 220px;
     }
 }
