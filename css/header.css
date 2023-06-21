@@ -35,14 +35,17 @@
 
 @media(max-width: 768px){
     .nav{
-        display: none;
+        display: block;
+        visibility: hidden;
         position: absolute;
-        top: 96px;
+        top: 70px;
         right: 0px;
+        height: 0px;
         background-color: #ffffff;
         width: 95%;
-        height: calc(100vh - 70px);
         z-index: 1000;
+        transition: .6s;
+        overflow-y: hidden;
     }
     .nav-button:hover{
         border: none;
@@ -55,7 +58,8 @@
         display: block;
     }
     #nav.ativo .nav{
-        display: block;
+        height: calc(100vh - 70px);
+        visibility: visible;
     }
 }
 

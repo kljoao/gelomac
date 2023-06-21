@@ -1,0 +1,36 @@
+.servicos-text{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.itens-container{
+    display: flex;
+    margin: 15px;
+}
+
+.preventiva-container{
+    display: inline-block;
+}
+
+.preventiva{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.preventiva-icon{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.servico-button{
+    background-color: rgb(113, 113, 255);
+    padding: 10px;
+    border: 0px;
+    border-radius: 200px;
+    margin-top: 20px;
+    margin-left: 300px;
+}

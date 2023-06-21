@@ -3,12 +3,16 @@
 const btnMenu = document.getElementById('menu-drop');
 const menuNav = document.getElementById('nav');
 
-function toggleMenu(){
+function toggleMenu(event){
+    if(event.type === 'touchstart'){
+        event.preventDefault();
+    }
     menuNav.classList.toggle('ativo')
 }
 
 
 btnMenu.addEventListener('click', toggleMenu);
+btnMenu.addEventListener('touchstart', toggleMenu);
 
 // SCRIPT DROPMENU
 
@@ -27,11 +31,6 @@ function typeWriter(e){
 typeWriter(titulo);
 
 // SCRIPT MÁQUINA DE ESCREVER
-
-window.sr = new ScrollReveal();
-sr.reveal('.section-story-img', { origin: 'top' , delay: 600 });
-sr.reveal('.story-text', { origin: 'bottom' , delay: 600 });
-
 
 
 
