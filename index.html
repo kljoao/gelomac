@@ -26,10 +26,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/icons/gelologo.svg">
     <link rel="icon" sizes="32x32" href="images/icons/gelologo.svg">
     <link rel="icon" sizes="16x16" href="images/icons/gelologo.svg">
+    <link rel="stylesheet" href="contact.css">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="workcards.css">
 </head>
+
 <body>
     <header class="fixed w-full">
         <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
@@ -39,21 +42,18 @@
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Gelomac</span>
                 </a>
                 <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 js-menu">
                         <li>
                             <a href="#" class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:p-0 dark:text-white" style="color: #EC3237;" aria-current="page">Início</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Empresa</a>
+                            <a href="#empresa" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Empresa</a>
                         </li>
                         <li>
                             <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Trabalhos</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Time</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contato</a>
+                            <a href="#contato" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -146,7 +146,7 @@
     </section>
     <!-- End block -->
     <!-- Start block -->
-    <section class="bg-gray-50 dark:bg-gray-800">
+    <section class="bg-gray-50 dark:bg-gray-800" id="empresa">
         <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
             <!-- Row -->
             <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
@@ -227,14 +227,14 @@
                 <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">Mais de 1000 clientes já confiaram no nosso trabalho</h2>
                 <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Junto ao nosso time, já deixamos diversos clientes altamente satisfeitos com o nosso serviço. Faça parte você também!</p>
                 <div class="pt-6 mt-6 space-y-4 border-t border-gray-200 dark:border-gray-700">
-                    <div>
-                      <a href="#" class="inline-flex items-center text-base font-medium text-purple-600 hover:text-purple-800 dark:text-purple-500" style="color: #EC3237;">
+                    <div class="js-menu">
+                      <a href="#contato" class="inline-flex items-center text-base font-medium text-purple-600 hover:text-purple-800 dark:text-purple-500" style="color: #EC3237;">
                         Faça parte
                         <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                       </a>
                     </div>
-                    <div>
-                      <a href="#" class="inline-flex items-center text-base font-medium text-purple-600 hover:text-purple-800 dark:text-purple-500" style="color: #EC3237;">
+                    <div class="js-menu">
+                      <a href="#contato" class="inline-flex items-center text-base font-medium text-purple-600 hover:text-purple-800 dark:text-purple-500" style="color: #EC3237;">
                         Mais informações
                           <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                       </a>
@@ -266,8 +266,58 @@
         </div>
       </section>
     <!-- End block -->
+
+    <!-- Start Block -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="works">
+            <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl dark:text-white">Nossos Serviços</h2>
+            
+            <div class="works-container layout">
+
+                <div class="works-cards">
+                    <img src="images/ar.png" alt="" width="80px">
+                    <h1 class="smart-phone-font text-xl font-medium text-gray-900 md:text-2xl dark:text-white">Instalação</h1>
+                    <p class="text-sm">Instalação de Sistemas de Climatização Industrial e Comercial</p>
+                </div>
+
+                <div class="works-cards">
+                    <img src="images/of.png" alt="" width="80px">
+                    <h1 class="smart-phone-font text-xl font-medium text-gray-900 md:text-2xl dark:text-white">Projetos</h1>
+                    <p class="text-sm">Elaboração de Estudos e Projetos Técnicos Para Todo Terreno</p>
+                </div>
+
+                <div class="works-cards">
+                    <img src="images/manu.png" alt="" width="80px">
+                    <h1 class="smart-phone-font text-xl font-medium text-gray-900 md:text-2xl dark:text-white">Manutenção</h1>
+                    <p class="text-sm">Realizamos Manutenções Preventivas Para Sua Segurança</p>
+                </div>
+
+                <div class="works-cards">
+                    <img src="images/contract.png" alt="" width="80px">
+                    <h1 class="smart-phone-fonttext-xl font-medium text-gray-900 md:text-2xl dark:text-white">Contratos</h1>
+                    <p class="text-sm">Contratos de Manutenção Flexíveis Conforme Demanda</p>
+                </div>
+
+                <div class="works-cards">
+                    <img src="images/consult.png" alt="" width="80px">
+                    <h1 class="smart-phone-fonttext-xl font-medium text-gray-900 md:text-2xl dark:text-white">Consultoria</h1>
+                    <p class="text-sm">Prestamos Consultoria, Assessoria e Supervisão Téncnica</p>
+                </div>
+
+                <div class="works-cards">
+                    <img src="images/reformas.png" alt="" width="80px">
+                    <h1 class="smart-phone-font text-xl font-medium text-gray-900 md:text-2xl dark:text-white">Reforma</h1>
+                    <p class="smart-txt text-sm">Restauração De Sistemas Antigos De Climatização</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Block -->
+
     <!-- Start block -->
-<section class="bg-gray-50 dark:bg-gray-800">
+<section class="set-margin bg-gray-50 dark:bg-gray-800">
     <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
         <figure class="max-w-screen-md mx-auto">
             <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -287,6 +337,9 @@
     </div>
   </section>
 <!-- End block -->
+<br>
+<br>
+<br>
 <!-- Start block -->
 <section class="bg-white dark:bg-gray-900">
     <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 ">
@@ -356,11 +409,73 @@
         <div class="max-w-screen-sm mx-auto text-center">
             <h2 class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">Solicite um Orçamento</h2>
             <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Entre em contato conosco e monte agora um orçamento para o seu imóvel favorito.</p>
-            <a href="#" class="text-white focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none" style="background-color: #EC3237;">Entre em Contato</a>
+            <a href="contato.html" class="text-white focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none" style="background-color: #EC3237;" id="contato">Entre em Contato</a>
         </div>
     </div>
 </section>
 <!-- End block -->
+
+<br>
+<br>
+<br>
+
+<!-- Start Block -->
+<section class="contact-container">
+
+    <div class="contact-title">
+      <h1 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Entre em <span class="blue-normal-40">Contato</span></h1>
+    </div>
+    <div class="contact-container-d">
+
+      <div class="contact-form-c">
+        <h1 class="text-base font-medium leading-tight text-gray-900 dark:text-white">Fale Conosco</h1>
+        <br />
+        <br />
+        <p class="contact-p-area contact-form-p">
+          Para qualquer informação, dúvida ou comentário:
+        </p>
+        <p class="contact-form-p">(13) 3223-1224</p>
+        <span class="contact-line"></span>
+
+        <form class="contact-form-all">
+          <h2 class="black-normal-20">Nome:</h2>
+          <input type="text" class="input-large" required/>
+
+          <h2 class="black-normal-20">Telefone:</h2>
+          <input type="text" class="input-large" required/>
+
+          <h2 class="black-normal-20">Mensagem:</h2>
+          <textarea name="Message" class="textarea" required style="resize: none; padding: 10px" placeholder="Descreva sua requisição"></textarea>
+          <br>
+          <button class="contact-button">Enviar</button>
+        </form>
+      </div>
+
+      <div class="contact-escritorios">
+        <h1 class="text-base font-medium leading-tight text-gray-900 dark:text-white">Escritório</h1>
+        <br>
+        <div>
+          <h2 class="black-normal-20">Brasil</h2>
+          <p class="contact-form-p">Gelomac Comércio de Ar Condicionado LTDA.<br>
+            Rua 7 de setembro - 42<br>
+            Vila Velha - | Santos, SP</p>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.5376646465625!2d-46.32310898270208!3d-23.941420426367355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03825b825ed7%3A0x3012619caff49f42!2sRua%20Sete%20de%20Setembro%2C%2042%20-%20Vila%20Nova%2C%20Santos%20-%20SP%2C%2011013-350!5e0!3m2!1spt-BR!2sbr!4v1704493328915!5m2!1spt-BR!2sbr" width="400" height="274" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <br>
+          <h2 class="black-normal-20">Carreiras</h2>
+          <p class="contact-form-p"><a href="https://www.linkedin.com/company/gelomac-ar-condicionado/jobs/" target="_blank">Clique aqui</a> para ver as vagas disponíveis</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- End block -->
+
+<br>
+<br>
+<br>
+
 <footer class="bg-white dark:bg-gray-800">
     <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
@@ -374,7 +489,7 @@
         </div>
     </div>
 </footer>
-    
+    <script src="script.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 </body>
 </html>
